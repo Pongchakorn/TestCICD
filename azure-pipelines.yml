@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: katalonTask@0
+  inputs:
+    version: '7.1.2'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/ChocoCICD" -executionProfile="default" -browserType="Firefox" -apiKey="bb616c46-8ffe-4f25-9bb3-5cb3cccb4c4b"'
