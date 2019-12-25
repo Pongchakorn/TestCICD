@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://dev-chococrm-cicd.azurewebsites.net/')
 
-WebUI.verifyTextPresent('DevOps?', false)
+WebUI.verifyTextPresent('Hello Happy World', false)
 
 WebUI.closeBrowser()
 
