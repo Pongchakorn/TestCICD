@@ -17,4 +17,4 @@ steps:
   inputs:
     version: '7.1.2'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/ChocoCICD" -executionProfile="default" -browserType="Firefox" -apiKey="bb616c46-8ffe-4f25-9bb3-5cb3cccb4c4b"'
-  displayName: 'Katalon Testing'
+  displayName: 'Automate Testing'
